@@ -377,7 +377,40 @@ nav a:nth-child(5):hover~.animation{
   border-radius: 18px;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   font-family: roboto;
-  background-image: url("./back1.png");
+  background-image: url("back1.png");
+  height: 250px;
+  width: 352px;
+  background-size: 100% 100%;
+  align-items: center;
+  transition: 0.5s ease;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  margin: auto;
+}
+
+.card1 {
+  display: grid;
+  grid-template-areas: "text" "image" "stats";
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  background-image: url("back2.png");
+  height: 250px;
+  width: 352px;
+  background-size: 100% 100%;
+  align-items: center;
+  transition: 0.5s ease;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  margin: auto;
+}
+.card2 {
+  display: grid;
+  grid-template-areas: "text" "image" "stats";
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  font-family: roboto;
+  background-image: url("back3.png");
   height: 250px;
   width: 352px;
   background-size: 100% 100%;
@@ -390,7 +423,7 @@ nav a:nth-child(5):hover~.animation{
 
 .card-image {
   grid-area: image;
-  background-image: url("./back1.png");
+  background-image: url("back1.png");
   height: 175px;
   width: 350px;
   opacity: 0%;
@@ -470,6 +503,14 @@ nav a:nth-child(5):hover~.animation{
   cursor: pointer;
 }
 .card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card1:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.card2:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
 }
