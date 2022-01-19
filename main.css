@@ -11,9 +11,9 @@ body {
 }
 
 .text {
-  margin: 0;
-  padding: 10px;
   color: #ffffff;
+  font-size: 25px;
+  text-align: center;
 }
 
 .title{
@@ -21,10 +21,13 @@ body {
 }
 
 .info {
+  text-decoration: none;
   color: #bfbfbf;
+  transition: 0.5s;
 }
 
 .info:hover {
+  font-size: 17px;
   color: #ffffff;
 }
 
@@ -39,9 +42,27 @@ body {
 	padding: 20px;
 	box-shadow: 0px 0px 20px #00000010;
 	background-color: #E1E1E1;
-	opacity: 20%;
 	border-radius: 8px;
 	margin-bottom: 20px;
+}
+
+.submit {
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.submit:hover {
+  font-size: 18px;
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+  margin-bottom: 10px;
+  transition: all 0.2s ease 0.2s;
+  cursor: pointer;
 }
 
 .section1 {
@@ -116,6 +137,13 @@ body {
   color: #ffffff;
 }
 
+.thanks {
+  font-size: 60px;
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
 .topnav {
   position: relative;
   background-color: #00001a;
@@ -166,7 +194,7 @@ body {
 .odkaz:hover {
   box-shadow: inset 400px 0 0 0 #FFFFFF;
   top: -4px;
-  color: #00001a;
+  color: #000000;
   cursor: pointer;
 }
 
@@ -185,7 +213,7 @@ body {
 }
 
 .odkaz3:hover {
-  color: #00001a;
+  color: #000000;
   cursor: pointer;
   border-radius: 50px;
 }
@@ -230,8 +258,8 @@ body {
 
 .aboutcss:hover {
   text-align: center;
-  color: #00001a;
-  border: 3px solid #00001a;
+  color: #000000;
+  border: 3px solid #000000;
   background: #ffffff;
 }
 
@@ -255,6 +283,7 @@ body {
   margin: 0 auto;
   text-align: center;
   font-size: 25px;
+  transition: 0.5s;
 }
 
 .back:hover {
@@ -270,7 +299,7 @@ body {
 }
 
 .clanek {
-  border: 2px solid #00001a;
+  border: 2px solid #000000;
   border-radius: 20px;
 }
 
