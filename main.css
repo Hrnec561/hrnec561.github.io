@@ -12,8 +12,9 @@ body {
 
 .text {
   color: #ffffff;
-  font-size: 25px;
+  font-size: 15px;
   text-align: center;
+  max-width: 400px;
 }
 
 .title{
@@ -462,6 +463,7 @@ nav a:nth-child(5):hover~.animation{
   text-align: center;
   align-content: center;
   font-size:13px;
+  margin-top: 0px;
 }
 .card-text p {
   color: white;
@@ -479,7 +481,7 @@ nav a:nth-child(5):hover~.animation{
   width: 342px;
   height: 100px;
   font-family: monospace;
-  margin: 10px;
+  margin-top: 0px;
   font-size:28px;
 }
 .card-text {
@@ -519,7 +521,14 @@ nav a:nth-child(5):hover~.animation{
   margin-bottom: 5px;
   border: 2px solid #ffffff;
   height: 30px;
+  transition: 0.2s;
   border-radius: 18px;
+}
+
+.stat:after {
+  content: "SEE";
+  transition: 0.2s;
+  padding-bottom: 2px;
 }
 
 .stat:hover {
@@ -528,9 +537,18 @@ nav a:nth-child(5):hover~.animation{
   color: #000000;
   box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
   margin-bottom: 10px;
+  padding-bottom: 2px;
   transition: all 0.2s ease 0.2s;
   cursor: pointer;
 }
+
+.stat:hover:after {
+  overflow: visible;
+  white-space: nowrap;
+  content: "  SEE ￫";
+  transition: 0.2s;
+}
+
 .card:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
@@ -542,4 +560,23 @@ nav a:nth-child(5):hover~.animation{
 .card2:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+
+.paralax {
+  background-image: url("back1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
+  min-height: 250px;
+  margin: auto;
+}
+.container2 {
+	width: 90%;
+	max-width: 500px;
+	background: #000000;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 15px;
+	padding: 25px;
 }
