@@ -12,19 +12,24 @@ body {
 }
 
 ::-webkit-scrollbar{
-  width: 12xp;
+  height: 8px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-thumb{
   background: #ffffff;
-  border-radius: 6px;
+  transition: 0.5s all 0.5 ease;
+  width: 2px;
+  border-radius: 15px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
-  background: #ffffff;
+  background: #bdbdbd;
+  transition: 0.5s all 0.5 ease;
 }
 
 ::-webkit-scrollbar-track{
+  border-radius: 15px;
   background: #000000;
 }
 
