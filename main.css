@@ -21,7 +21,6 @@ body {
   color: #ffffff;
   font-size: 45px;
   text-align: center;
-  margin-left: 940%;
 }
 
 .title{
@@ -167,7 +166,6 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -515,7 +513,7 @@ nav a:nth-child(5):hover~.animation{
   align-content: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  height: 200px:
+  height: 200px;
 }
 .stat {
   display: flex;
@@ -607,13 +605,15 @@ nav a:nth-child(5):hover~.animation{
   background-repeat: none;
   background-size: cover;
   width: 20%;
+  margin-top: -50px;
+  margin-bottom: 2px;
   margin-left: 10px;
   max-height: 70px;
   max-width: 70px;
   height: 50px;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width: 700px){
   .card {
     display: grid;
     grid-template-areas: "text" "image" "stats";
@@ -717,7 +717,7 @@ nav a:nth-child(5):hover~.animation{
     align-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    height: 200px:
+    height: 200px;
   }
   .stat {
     display: flex;
@@ -778,7 +778,6 @@ nav a:nth-child(5):hover~.animation{
     color: #ffffff;
     font-size: 45px;
     text-align: center;
-    margin-left: 180%;
   }
   .backimage {
     background-image: url(back-main.png);
@@ -786,15 +785,140 @@ nav a:nth-child(5):hover~.animation{
     background-repeat: none;
     background-size: cover;
     width: 100%;
-    height: 550px;
+    height: 680px;
   }
-    .nav{
+  nav{
     position: relative;
     margin: 10px auto 0;
-    width: 400px;
+    width: 380px;
     height: 50px;
     border-radius: 8px;
     font-size: 0;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+  }
+  nav a{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+  }
+  nav .animation{
+    position: absolute;
+    text-transform: uppercase;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    color: #E1E1E1;
+    background: #000000;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+  }
+  nav a:nth-child(1){
+    width: 95px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation{
+    width: 95px;
+    left: 0px;
+  }
+  nav a:nth-child(2):hover~.animation{
+    background: #ffffff;
+    width: 95px;
+    left: 0px;
+  }
+  nav a:nth-child(2){
+    width: 95px;
+  }
+  nav a:nth-child(3):hover~.animation{
+    background: #ffffff;
+    width: 95px;
+    left: 95px;
+  }
+  nav a:nth-child(3){
+    width: 95px;
+  }
+  nav a:nth-child(4):hover~.animation{
+    background: #ffffff;
+    width: 95px;	
+    left: 190px;
+  }
+  nav a:nth-child(4){
+    width: 110px;
+  }
+  nav a:nth-child(5):hover~.animation{
+    background: #ffffff;
+    width: 95px;
+    left: 280px;
+  }
+}
+@media screen and (max-width: 700px){
+  nav{
+    position: relative;
+    margin: 10px auto 0;
+    width: 320px;
+    height: 50px;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+  }
+  nav a{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+  }
+  nav .animation{
+    position: absolute;
+    text-transform: uppercase;
+    height: 5px;
+    bottom: 0;
+    z-index: 0;
+    color: #E1E1E1;
+    background: #000000;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+  }
+  nav a:nth-child(1){
+    width: 80px;
+  }
+  nav .start-home, a:nth-child(1):hover~.animation{
+    width: 80px;
+    left: 0px;
+  }
+  nav a:nth-child(2):hover~.animation{
+    background: #ffffff;
+    width: 80px;
+    left: 0px;
+  }
+  nav a:nth-child(2){
+    width: 80px;
+  }
+  nav a:nth-child(3):hover~.animation{
+    background: #ffffff;
+    width: 80px;
+    left: 80px;
+  }
+  nav a:nth-child(3){
+    width: 80px;
+  }
+  nav a:nth-child(4):hover~.animation{
+    background: #ffffff;
+    width: 80px;	
+    left: 160px;
+  }
+  nav a:nth-child(4){
+    width: 100px;
+  }
+  nav a:nth-child(5):hover~.animation{
+    background: #ffffff;
+    width: 80px;
+    left: 240px;
   }
 }
