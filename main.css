@@ -11,6 +11,25 @@ body {
   background-color: #000000;
 }
 
+.cc {
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.cc-odkaz {
+  text-decoration: none;
+  justify-content: center;
+  text-align: center;
+  color: #b6b6b6;
+}
+
+.cc-odkaz:hover {
+  color: #8b8b8b;
+}
+
 ::-webkit-scrollbar{
   height: 8px;
   width: 10px;
@@ -411,6 +430,7 @@ body {
   font-size: 12px;
   color: #bfbfbf;
   text-align: center;
+  text-decoration: none;
 }
 
 nav{
@@ -480,77 +500,44 @@ nav a:nth-child(5):hover~.animation{
 	left: 300px;
 }
 
+.cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+}
+
 .card {
-  display: grid;
-  grid-template-areas: "text" "image" "stats";
+  margin: 10px;
+  position: relative;
   border-radius: 25px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
-  background-image: url("back1.png");
+  box-shadow:5px 5px 15px #000000e6;
   height: 300px;
   width: 422px;
   background-size: 100% 100%;
-  align-items: left;
-  transition: 0.5s ease;
-  border: 2px solid #ffffff;
+  transition: .5s ease;
+  border: 2px solid #fff;
   cursor: pointer;
-  margin-left: 2%;
-  margin-bottom: -20.9%;
+  padding-top: 220px;
 }
 
-.card1 {
-  display: grid;
-  grid-template-areas: "text" "image" "stats";
-  border-radius: 25px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+.card-text {
+  position: absolute;
+  top:0;left:0;right:0;
+  margin-top: 0;
+  padding-top: 1%;
   font-family: roboto;
-  background-image: url("back2.png");
-  height: 300px;
-  width: 422px;
-  background-size: 100% 100%;
-  align-items: center;
-  transition: 0.5s ease;
-  border: 2px solid #ffffff;
-  cursor: pointer;
-  margin: auto;
-  margin-bottom: -20.9%;
-}
-.card2 {
-  display: grid;
-  grid-template-areas: "text" "image" "stats";
-  border-radius: 25px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
-  background-image: url("back3.png");
-  height: 300px;
-  width: 422px;
-  background-size: 100% 100%;
-  align-items: right;
-  transition: 0.5s ease;
-  border: 2px solid #ffffff;
-  cursor: pointer;
-  margin-left: 70%;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  box-shadow: 5px 5px 15px #000000e6;
+  background: #fff;
+  opacity: 0.6;
+  height: 10%;
+  border-radius: 25px 25px 0 0;
 }
 
-.partner1 {
-  display: grid;
-  grid-template-areas: "text" "image" "stats";
-  border-radius: 25px;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  font-family: roboto;
-  background-image: url("partner1.png");
-  height: 300px;
-  width: 422px;
-  background-size: 100% 100%;
-  align-items: center;
-  transition: 0.5s ease;
-  border: 2px solid #ffffff;
-  cursor: pointer;
-  margin: auto;
-}
-.partner1:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
+.card-stats {
+  justify-content: center;
 }
 
 .card-image {
@@ -560,71 +547,22 @@ nav a:nth-child(5):hover~.animation{
   width: 350px;
   opacity: 0%;
 }
-.card-text d {
-  color: rgb(255, 7, 110);
-  text-align: center;
-  align-content: center;
-  font-size:13px;
-  margin-top: 0px;
-}
-.card-text p {
-  color: white;
-  text-align: center;
-  font-size:15px;
-  font-weight: 300;
-  width: 350px;
-}
 
-.card-text m {
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  width: 342px;
-  height: 150px;
-  font-family: monospace;
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-size:30px;
-}
-.card-text {
-  margin-top: 0px;
-  text-align: center;
-  color: #000000;
-  box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-  background-color: #ffffff;
-  opacity: 60%;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  align-items: center;
-  align-content: center;
-}
-.card-stats {
-  grid-area: stats;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  align-content: center;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  height: 200px;
-}
 .stat {
   display: flex;
   text-align: center;
   justify-content: center;
-  flex-direction: column;
   color: black;
   text-decoration: none;
   color: #ffffff;
-  bottom: 0px;
   background: #000000;
   width: 175px;
-  margin-left: 125px;
-  margin-bottom: 85px;
   border: 2px solid #ffffff;
   height: 35px;
   transition: 0.2s;
   border-radius: 18px;
+  transform: translate(70%, 50%);
+  padding-top: 1.2%;
 }
 
 .stat:after {
@@ -641,6 +579,7 @@ nav a:nth-child(5):hover~.animation{
   margin-bottom: 100px;
   padding-bottom: 2px;
   transition: all 0.2s ease 0.2s;
+  transform: translate(70%, 40%);
   cursor: pointer;
 }
 
@@ -652,14 +591,6 @@ nav a:nth-child(5):hover~.animation{
 }
 
 .card:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
-}
-.card1:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
-}
-.card2:hover {
   transform: scale(1.1);
   box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
 }
@@ -707,6 +638,9 @@ nav a:nth-child(5):hover~.animation{
 }
 
 @media screen and (max-width: 700px){
+  .cards {
+    display: grid;
+  }
   .card {
     display: grid;
     grid-template-areas: "text" "image" "stats";
@@ -714,66 +648,17 @@ nav a:nth-child(5):hover~.animation{
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     font-family: roboto;
     background-image: url("back1.png");
-    height: 250px;
-    width: 352px;
+    height: 170px;
+    width: 300px;
     background-size: 100% 100%;
     align-items: center;
     transition: 0.5s ease;
     border: 2px solid #ffffff;
     cursor: pointer;
     margin: auto;
-  }
-  
-  .card1 {
-    display: grid;
-    grid-template-areas: "text" "image" "stats";
-    border-radius: 18px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
-    background-image: url("back2.png");
-    height: 250px;
-    width: 352px;
-    background-size: 100% 100%;
-    align-items: center;
-    transition: 0.5s ease;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    margin: auto;
-  }
-  .card2 {
-    display: grid;
-    grid-template-areas: "text" "image" "stats";
-    border-radius: 18px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
-    background-image: url("back3.png");
-    height: 250px;
-    width: 352px;
-    background-size: 100% 100%;
-    align-items: center;
-    transition: 0.5s ease;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    margin: auto;
+    margin-bottom: 10%;
   }
 
-  .partner1 {
-    display: grid;
-    grid-template-areas: "text" "image" "stats";
-    border-radius: 18px;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    font-family: roboto;
-    background-image: url("partner1.png");
-    height: 250px;
-    width: 352px;
-    background-size: 100% 100%;
-    align-items: center;
-    transition: 0.5s ease;
-    border: 2px solid #ffffff;
-    cursor: pointer;
-    margin: auto;
-  }
-  
   .card-image {
     grid-area: image;
     background-image: url("back1.png");
@@ -781,32 +666,7 @@ nav a:nth-child(5):hover~.animation{
     width: 350px;
     opacity: 0%;
   }
-  .card-text d {
-    color: rgb(255, 7, 110);
-    text-align: center;
-    align-content: center;
-    font-size:13px;
-    margin-top: 0px;
-  }
-  .card-text p {
-    color: white;
-    text-align: center;
-    font-size:15px;
-    font-weight: 300;
-    width: 350px;
-  }
-  
-  .card-text m {
-    margin-top:10px;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    width: 342px;
-    height: 100px;
-    font-family: monospace;
-    margin-top: 0px;
-    font-size:28px;
-  }
+
   .card-text {
     margin-top:0px;
     text-align: center;
@@ -837,15 +697,14 @@ nav a:nth-child(5):hover~.animation{
     color: black;
     text-decoration: none;
     color: #ffffff;
-    bottom: 0px;
     background: #000000;
     width: 150px;
-    margin-left: 100px;
-    margin-bottom: 175px;
     border: 2px solid #ffffff;
     height: 30px;
     transition: 0.2s;
     border-radius: 18px;
+    transform: translate(0%, -420%);
+    padding-top: 1.2%;
   }
   
   .stat:after {
@@ -859,8 +718,7 @@ nav a:nth-child(5):hover~.animation{
     background: #ffffff;
     color: #000000;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    margin-bottom: 190px;
-    padding-bottom: 2px;
+    transform: translate(0%, -280%);
     transition: all 0.2s ease 0.2s;
     cursor: pointer;
   }
@@ -876,19 +734,7 @@ nav a:nth-child(5):hover~.animation{
     transform: scale(1.1);
     box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
   }
-  .card1:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
-  }
-  .card2:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
-  }
 
-  .sponzor1:hover {
-    transform: scale(1.1);
-    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.6);
-  }
   .hmain{
     color: #ffffff;
     font-size: 45px;
